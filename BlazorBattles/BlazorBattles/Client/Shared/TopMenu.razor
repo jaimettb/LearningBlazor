@@ -1,8 +1,14 @@
-﻿<div>
-    <img src="icons/I_C_Banana.png" />
-    @Bananas
+﻿<div class="top-menu">
+    <img src="icons/I_C_Banana.png" /><span class="popover-header">@Bananas</span>
+    <AddBananas BananasAddEvent="AddBananas" />
 </div>
 
 @code {
+    [Parameter]
     public int Bananas { get; set; } = 100;
+
+    public void AddBananas(int value)
+    {
+        this.Bananas += value;
+    }
 }
