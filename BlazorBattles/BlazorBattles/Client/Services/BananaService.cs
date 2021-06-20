@@ -16,6 +16,12 @@ namespace BlazorBattles.Client.Services
             this.BananasChanged();
         }
 
+        public void AddBananas(int amount)
+        {
+            Bananas += amount;
+            BananasChanged();
+        }
+
         private void BananasChanged() => OnChange.Invoke();
     }
 }

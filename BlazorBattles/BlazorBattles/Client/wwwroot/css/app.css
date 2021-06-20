@@ -30,6 +30,12 @@ a, .btn-link {
     color: red;
 }
 
+.army-list{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
 .top-menu{
     justify-content: center;
     width: 100%;
@@ -48,9 +54,13 @@ a, .btn-link {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+
+.blazored-toast-container{
+    z-index:999;
+}
